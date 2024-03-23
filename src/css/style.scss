@@ -1,2 +1,38 @@
 @import "./tailwind";
 @import "./main";
+
+// GLOBAL Styles
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+  // background-image: url('../img/left.png'), url('../img/right.png');
+  // background-position: left bottom, right top;
+  min-height: 1000vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+// .someclass {
+//   min-height: 200vh;
+// }
+
+:root {
+  --header-bg: #121414;
+}
+
+header {
+  background-color: var(--header-bg);
+}

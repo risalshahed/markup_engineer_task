@@ -5,9 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gulp with TailwindCSS v3</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <h2 class="text-yellow-500">fjkfjhd</h2>
+  <body class="max-w-[1024px] mx-auto px-32 py-20">
+    <!-- Header -->
+    <header class="relative">
+      <!-- Home -->
+      <h1 class="text-8xl font-bold text-gray-500 absolute -top-16 -left-28 -z-10">Home</h1>
+      <!-- Inside Header -->
+      <div class="flex items-center  text-white">
+        <!-- Author Intro -->
+        <div class="w-1/3 border-r border-white">
+          <div>Daryl <span class="text-yellow-500">Smith</span></div>
+          <div>UI/UX designer</div>
+        </div>
+        <!-- END of Author Intro -->
+        <!-- Right Side of Header -->
+        <div class="w-2/3 flex justify-between items-center px-5">
+          <div class="flex items-center gap-x-3">
+            <img class="bg-gradient-to-r from-yellow-500 to-yellow-600 p-1 rounded-md" src="img/home.png" alt="home">
+            <p>Home</p>
+          </div>
+          <div class="text-yellow-500">
+            Talk To me
+          </div>
+        </div>
+        <!-- END of Right Side of Header -->
+      </div>
+      <!-- END of Inside Header -->
+    </header>
+    <!-- END of Header -->
+    
+    <main class="relative">
+      <!-- Top Section -->
+      <section>
+
+      </section>
+      <!-- END of Top Section -->
+
+
+      <div class="flex">
+        <img class="absolute -z-10 w-1/2 pt-28" src="img/left.png" alt="">
+        <img class="absolute -z-10 right-0 w-1/2" src="img/right.png" alt="">
+      </div>
+      
+      <section class="someclass flex gap-x-5 py-20 text-center">
+        <div class="bg-yellow-500 mt-40">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem nobis placeat aliquid officiis aspernatur ex id aut omnis, harum ratione sequi? Illo quaerat necessitatibus magni! Neque quo amet error ullam harum nobis. Eos cum ducimus rerum pariatur voluptas, officiis, iste aut facere vel quis veniam ipsa velit, expedita numquam. Natus.
+        </div>
+        <div  class="bg-yellow-500 mt-40">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident quidem accusantium necessitatibus dicta, deserunt architecto consectetur eaque! Nesciunt aliquid repellendus maiores? Perferendis architecto ducimus fugit quis minus voluptate ipsa magnam aperiam iure? Accusamus corporis aspernatur libero ducimus modi nesciunt tenetur atque quas voluptas! Illo, exercitationem iusto. Nesciunt, animi fuga.
+        </div>
+      </section>
+    </main>
+
+  
+  
+  <script src="js/script.js"></script>
   </body>
 </html>
