@@ -16,8 +16,8 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'DM Sans', sans-serif;
-  // background-image: url('../img/left.png'), url('../img/right.png');
-  // background-position: left bottom, right top;
+  background-image: url('../img/left.png'), url('../img/right.png');
+  background-position: left top 80px, right top;
   min-height: 1000vh;
 }
 
@@ -31,8 +31,12 @@ button {
 
 :root {
   --header-bg: #121414;
+  --main-bg: #171b1a;
 }
 
 header {
   background-color: var(--header-bg);
+}
+main {
+  background-color: var(--main-bg);
 }
