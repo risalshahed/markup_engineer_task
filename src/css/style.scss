@@ -16,18 +16,11 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'DM Sans', sans-serif;
-  background-image: url('../img/left.png'), url('../img/right.png');
-  background-position: left top 80px, right top;
-  min-height: 1000vh;
 }
 
 button {
   cursor: pointer;
 }
-
-// .someclass {
-//   min-height: 200vh;
-// }
 
 :root {
   --header-bg: #121414;
@@ -36,7 +29,16 @@ button {
 
 header {
   background-color: var(--header-bg);
+  box-shadow: 0 10px 25px #222;
 }
 main {
   background-color: var(--main-bg);
+  box-shadow: 0 10px 25px #222;
+}
+
+#designer {
+  writing-mode: vertical-lr;
+}
+.rotated-div {
+  background: linear-gradient(135deg, #444 0%, #000 40%)
 }

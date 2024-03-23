@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="max-w-[1200px] mx-auto px-32 py-20">
+  <body class="py-28 relative bg-[#171b1a]">
     <!-- Header -->
-    <header class="relative">
+    <header class="relative max-w-[1300px] mx-28">
       <!-- Home -->
       <h1 class="text-8xl font-bold text-gray-500 absolute -top-16 -left-28 -z-10">Home</h1>
       <!-- Inside Header -->
       <div class="flex items-center text-white">
-        <!-- Author Intro -->
-        <div class="w-1/3 border-r border-white py-4">
-          <div>Daryl <span class="text-yellow-500">Smith</span></div>
-          <div>UI/UX designer</div>
+        <!-- Author Div -->
+        <div class="w-1/3 border-r border-gray-600 py-4 flex">
+          <div class="w-1/5 hidden md:block"></div>
+          <!-- Author Intro -->
+          <div class="w-4/5">
+            <h3 class="text-2xl font-semibold">Daryl <span class="text-yellow-500">Smith</span></h3>
+            <h4 class="text-gray-400">UI/UX designer</h4>
+          </div>
         </div>
-        <!-- END of Author Intro -->
+        <!-- END of Author Div -->
         <!-- Right Side of Header -->
-        <div class="w-2/3 flex justify-between items-center px-5 py-4">
+        <div class="w-2/3 flex justify-between items-center px-10 py-4">
           <div class="flex items-center gap-x-3">
-            <img class="bg-gradient-to-r from-yellow-500 to-yellow-600 p-1 rounded-md" src="img/home.png" alt="home">
+            <img class="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-500 p-1 rounded-md" src="img/home.png" alt="home">
             <p>Home</p>
           </div>
-          <div class="text-yellow-500">
-            Talk To me
+          <div class="text-yellow-500 border border-yellow-500 px-4 py-2 rounded-3xl">
+            Talk To Me
           </div>
         </div>
         <!-- END of Right Side of Header -->
@@ -36,132 +40,462 @@
       <!-- END of Inside Header -->
     </header>
     <!-- END of Header -->
+
+    <div class="flex">
+      <img class="absolute -z-10 w-1/2 pt-28" src="img/left.png" alt="">
+      <img class="absolute -z-10 right-0 w-1/2" src="img/right.png" alt="">
+    </div>
     
-    <main class="relative">
+    <main class="relative max-w-[1300px] mx-28">
       <!-- Top Section -->
-      <section>
-        <div class="flex items-center">
-          <!-- Left Top Section -->
-          <div class="w-1/3 flex items-center">
-            <!-- Profile Left Sidebar -->
-            <div class="flex flex-col gap-y-3 w-3/10">
-              <img src="img/first-section/home.png" alt="home">
-              <img src="img/first-section/profile-about.png" alt="about">
-              <img src="img/first-section/portfolio.png" alt="portfolio">
-              <img src="img/first-section/blog.png" alt="blog">
-              <img src="img/first-section/phone.png" alt="phone">
-            </div>
-            <!-- END of Profile Left Sidebar -->
-            <!-- Profile Image & Social Icons -->
-            <div>
-              <!-- Profile Image -->
-              <img class="bg-gray-800" src="img/profile-image.png" alt="profile-image">
-              <!-- Social Icons -->
-              <div class="flex items-center justify-center gap-x-3 py-3">
-                <!-- Facebook -->
-                <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-500 rounded-full p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 320 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-                  </svg>
-                </span>
-                <!-- Linkedin -->
-                <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-500 rounded-full p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 448 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
-                  </svg>
-                </span>
-                <!-- Pinterest -->
-                <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-500 rounded-full p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 496 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
-                  </svg>
-                </span>
-                <!-- Instagram -->
-                <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-500 rounded-full p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 448 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                  </svg>
-                </span>
-                <!-- Twitter -->
-                <span class="me-2 [&>svg]:h-4 [&>svg]:w-4 text-white bg-gray-500 rounded-full p-2">
-                  <svg
+      <section class="flex">
+        <!-- Left Top Section -->
+        <div class="w-1/3 flex items-center bg-[#121817]">
+          <!-- Profile Left Sidebar -->
+          <div class="flex flex-col gap-y-5 px-5">
+            <img src="img/first-section/home.png" alt="home">
+            <img src="img/first-section/profile-about.png" alt="about">
+            <img src="img/first-section/portfolio.png" alt="portfolio">
+            <img src="img/first-section/blog.png" alt="blog">
+            <img src="img/first-section/phone.png" alt="phone">
+          </div>
+          <!-- END of Profile Left Sidebar -->
+          <!-- Profile Image & Social Icons -->
+          <div class="bg-[#101212]">
+            <!-- Profile Image -->
+            <img class="" src="img/profile-image.png" alt="profile-image">
+            <!-- Social Icons -->
+            <div class="flex items-center justify-center gap-x-3 py-3 bg-[#121414]">
+              <!-- Facebook -->
+              <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-800 rounded-full p-2">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  viewBox="0 0 512 512">
+                  viewBox="0 0 320 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
-                  </svg>
-                </span>
-              </div>    <!-- END of Social Icons -->
-            </div>    <!-- END of Profile Image -->
-            <!-- END of Profile Image & Social Icons -->
-          </div>    <!-- END of Left Top Section -->
-          <!-- Right Top Section -->
-          <div class="w-2/3 flex items-center text-white px-5">
-            <!-- Creative div -->
-            <div>
-              <h5 class="uppercase">introduction</h5>
-              <h2>I'm a Creative Developer &<br />UI/UX Design Expert</h2>
-              <h6>24 years   /   Robert Smith   /   UK London</h6>
-              <p>Prolific, full stack web developer with a passion for metrics and beating former "best-yets. Prototyped 25 new product features per year for Flexor, Inc. Decreased rework by 22% and costs by 15%. Consistently receive high user experience scores for all web development projects, including a 55% increase for Flexor, Inc. Passionate about building world class web applications. One of my sites received a 2020 Webby for Best 
-              Navigation and Structure.</p>
-              <button class="flex gap-x-2 button bg-gradient-to-r from-yellow-500 to-yellow-600 px-4 py-2 rounded-xl">
-                Download CV
-                <img src="img/first-section/download.png" alt="download">
-              </button>
-            </div>
-            <!-- END of Creative div -->
-            <!-- div containing rotation -->
-            <div>
-              <!-- Transformed paragraph -->
-              <p class="rotate-90">
-                © design by themefisher developed by gethugothemes
-              </p>
-              <p>Fr</p>
-              <p>En</p>
-            </div>
-            <!-- END of div containing rotation -->
+                  <path
+                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                </svg>
+              </span>
+              <!-- Linkedin -->
+              <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-800 rounded-full p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                  <path
+                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                </svg>
+              </span>
+              <!-- Pinterest -->
+              <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-800 rounded-full p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 496 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                  <path
+                    d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                </svg>
+              </span>
+              <!-- Instagram -->
+              <span class="[&>svg]:h-5 [&>svg]:w-5 text-white bg-gray-800 rounded-full p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+              </span>
+              <!-- Twitter -->
+              <span class="me-2 [&>svg]:h-4 [&>svg]:w-4 text-white bg-gray-800 rounded-full p-2">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                  <path
+                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                </svg>
+              </span>
+            </div>    <!-- END of Social Icons -->
+          </div>    <!-- END of Profile Image -->
+          <!-- END of Profile Image & Social Icons -->
+        </div>    <!-- END of Left Top Section -->
+        <!-- Right Top Section -->
+        <div class="w-2/3 flex items-stretch text-white px-5">
+          <!-- Creative div -->
+          <div class="px-5">
+            <h5 class="uppercase py-3 text-yellow-500 text-lg font-semibold">introduction</h5>
+            <h2 class="pb-3 text-4xl font-semibold">I'm a Creative Developer &<br />UI/UX Design Expert</h2>
+            <h6 class="pb-3 font-semibold">24 years   /   Robert Smith   /   UK London</h6>
+            <p class="py-3 text-sm text-gray-300">Prolific, full stack web developer with a passion for metrics and beating former "best-yets. Prototyped 25 new product features per year for Flexor, Inc. Decreased rework by 22% and costs by 15%. Consistently receive high user experience scores for all web development projects, including a 55% increase for Flexor, Inc. Passionate about building world class web applications. One of my sites received a 2020 Webby for Best 
+            Navigation and Structure.</p>
+            <button class="flex gap-x-2 button bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-500 px-6 py-2 rounded-3xl mt-3">
+              Download CV
+              <img src="img/first-section/download.png" alt="download">
+            </button>
+          </div>      <!-- END of Creative div -->
+          <!-- div containing rotation -->
+          <div class="rotated-div flex flex-col justify-center items-center gap-y-2">
+            <!-- Transformed paragraph -->
+            <p id="designer" class="text-xs text-gray-300">
+              ©design by themefisher developed by gethugothemes
+            </p>
+            <p class="bg-gray-800 text-center px-3 py-2 rounded-full mt-3">Fr</p>
+            <p class="bg-yellow-500 text-center px-3 py-2 rounded-full">En</p>
+          </div>      <!-- END of div containing rotation -->
+        </div>      <!-- END of Right Top Section -->
+      </section>      <!-- END of Top Section -->
+
+      <!-- Resume Section -->
+      <section class="flex text-white py-10">
+        <div class="w-1/3 hidden md:block">
+        </div>
+        <div class="w-2/3 px-8">
+          <h2 class="text-4xl font-semibold pb-3">Resume</h2>
+          <!-- Graduation Div -->
+          <div class="flex items-center gap-x-2 py-5">
+            <img class="bg-gray-700 p-2 rounded-sm" src="img/resume/graduate.png" alt="graduate">
+            <h5 class="text-lg font-semibold">Education</h5>
           </div>
-          <!-- END of Right Top Section -->
+          <!-- Education Details div -->
+          <div class="flex items-center gap-x-5">
+            <img src="img/resume/divider.png" alt="">
+            <div>
+            <!-- Post Grad Details -->
+            <h6 class="mb-5"><span class="border rounded-md px-2 py-1">2016-2020</span></h6>
+            <div class="bg-[#121414] px-5 py-3 mb-7">
+              <h4 class="text-yellow-500 font-semibold text-2xl py-1">Harvard University</h4>
+              <h5 class="text-gray-500 text-lg mb-3">B.A. and M.S., Computer Science</h5>
+              <p class="border-t border-gray-500 pt-3 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+            </div>      <!-- END of Post Grad Details -->
+            <!-- Graduation Details -->
+            <h6 class="mb-5"><span class="border rounded-md px-2 py-1">2016-2020</span></h6>
+            <div class="bg-[#121414] px-5 py-3">
+              <h4 class="text-yellow-500 font-semibold text-2xl py-1">Helwan University</h4>
+              <h5 class="text-gray-500 text-lg mb-3">Bachelor Degree</h5>
+              <p class="border-t border-gray-500 pt-3 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+            </div>      <!-- END of Graduation Details -->
+            </div>    <!-- END of Education Details div -->
+          </div>
+          <!-- Work History -->
+          <div class="flex items-center gap-x-2 py-5">
+            <img class="bg-gray-700 p-2 rounded-sm" src="img/resume/work-list.png" alt="work-list">
+            <h5 class="text-lg font-semibold">Work History</h5>
+          </div>
+          <!-- Work Details div -->
+          <div class="flex items-center gap-x-5">
+            <img src="img/resume/divider.png" alt="">
+            <div>
+            <!-- Post Grad Details -->
+            <h6 class="mb-5"><span class="border rounded-md px-2 py-1">2016-2020</span></h6>
+            <div class="bg-[#121414] px-5 py-3 mb-7">
+              <h4 class="text-yellow-500 font-semibold text-2xl py-1">UI/UX design</h4>
+              <h5 class="text-gray-500 text-lg mb-3">Web site design</h5>
+              <p class="border-t border-gray-500 pt-3 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+            </div>      <!-- END of Post Grad Details -->
+            <!-- Graduation Details -->
+            <h6 class="mb-5"><span class="border rounded-md px-2 py-1">2016-2020</span></h6>
+            <div class="bg-[#121414] px-5 py-3">
+              <h4 class="text-yellow-500 font-semibold text-2xl py-1">Junior Web designers</h4>
+              <h5 class="text-gray-500 text-lg mb-3">Product designer</h5>
+              <p class="border-t border-gray-500 pt-3 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+            </div>      <!-- END of Graduation Details -->
+            </div>    <!-- END of Education Details div -->
+          </div>
+          <!-- END of Work History -->
         </div>
-      </section>
-      <!-- END of Top Section -->
+      </section>      <!-- END of Resume Section -->
 
-
-      <!-- <div class="flex">
-        <img class="absolute -z-10 w-1/2 pt-28" src="img/left.png" alt="">
-        <img class="absolute -z-10 right-0 w-1/2" src="img/right.png" alt="">
-      </div> -->
       
-      <section class="someclass flex gap-x-5 py-20 text-center">
-        <div class="bg-yellow-500 mt-40">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem nobis placeat aliquid officiis aspernatur ex id aut omnis, harum ratione sequi? Illo quaerat necessitatibus magni! Neque quo amet error ullam harum nobis. Eos cum ducimus rerum pariatur voluptas, officiis, iste aut facere vel quis veniam ipsa velit, expedita numquam. Natus.
+      
+
+      <!-- Portfolio section -->
+      <section class="flex justify-center mt-10">
+        <div>
+          <h1 class="font-bold text-2xl text-left text-white py-4 ">Portfolio</h1>
         </div>
-        <div  class="bg-yellow-500 mt-40">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident quidem accusantium necessitatibus dicta, deserunt architecto consectetur eaque! Nesciunt aliquid repellendus maiores? Perferendis architecto ducimus fugit quis minus voluptate ipsa magnam aperiam iure? Accusamus corporis aspernatur libero ducimus modi nesciunt tenetur atque quas voluptas! Illo, exercitationem iusto. Nesciunt, animi fuga.
+        <div class="px-20 gap-6 py-4 flex lg:flex-row flex-col text-white">
+          <p class="border-b-4 border-yellow-400 border-yellow-500">All</p>
+          <p class="border-b-4 border-gray-800 hover:border-yellow-500">Graphic Design</p>
+          <p class="border-b-4 border-gray-800 hover:border-yellow-500">Mobile App</p>
+          <p class="border-b-4 border-gray-800 hover:border-yellow-500">Photography</p>
+          <p class="border-b-4 border-gray-800 hover:border-yellow-500">UI/UX Design</p>
         </div>
       </section>
+
+      <section class="flex justify-center relative ">
+      <div class="">
+        <h2 class="font-bold text-2xl text-left text-white py-4 px-5">Blog</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+          <div class="max-w-xs mx-auto mb-4 md:mb-0 lg:mb-0">
+            <div class="bg-black shadow-md rounded-lg overflow-hidden">
+              <img class="w-auto h-auto" src="img/blog/photographer.png" alt="Placeholder Image">
+              <div class="p-4">
+                <h2 class=" text-base text-gray-400">Photography  |  28 Apr 2022</h2>
+                <h5 class="text-white mt-2 text-1xl font-bold">The artist vocation is to send light into the human heart.</h5>
+                <div class="my-4">
+                  <p class="text-base text-gray-500">Lorem Ipsum is simply dummy text the
+                      printing typesetting industry. Lorem
+                      Ipsum has been...</p>
+                </div>
+                <div class="mt-3">
+                  <p ><i class="fa-solid fa-minus px-1 text-yellow-400"></i><span class="text-white">Posted By Daryl Smith </span><i class="fa-solid fa-minus text-yellow-400"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-xs mx-auto mb-4 md:mb-0 lg:mb-0">
+            <div class="bg-black shadow-md rounded-lg overflow-hidden">
+              <img class="w-auto h-auto" src="img/blog/boat-journey.png" alt="Placeholder Image">
+              <div class="p-4">
+                <h2 class=" text-base text-gray-400">Adventure | 28 Apr 2022</h2>
+                <h5 class="text-white mt-2 text-1xl font-bold">The artist vocation is to send light into the human heart.</h5>
+                <div class="my-4">
+                  <p class="text-base text-gray-500">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
+                </div>
+                <div class="mt-3">
+                  <p ><i class="fa-solid fa-minus px-1 text-yellow-400"></i><span class="text-white">Posted By Daryl Smith </span><i class="fa-solid fa-minus text-yellow-400"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="max-w-xs mx-auto mb-4 md:mb-0 lg:mb-0">
+            <div class="bg-black shadow-md rounded-lg overflow-hidden">
+              <img class="w-auto h-auto" src="img/blog/workstation.png" alt="Placeholder Image">
+              <div class="p-4">
+                <h2 class=" text-base text-gray-400">Graphic design |  28 Apr 2022</h2>
+                <h5 class="text-white mt-2 text-1xl font-bold">The artist vocation is to send light into the human heart.</h5>
+                <div class="my-4">
+                  <p class="text-base text-gray-500">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
+                </div>
+                <div class="mt-3">
+                  <p ><i class="fa-solid fa-minus px-1 text-yellow-400"></i><span class="text-white">Posted By Daryl Smith </span><i class="fa-solid fa-minus text-yellow-400"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="max-w-xs mx-auto mb-4 md:mb-0 lg:mb-0">
+            <div class="bg-black shadow-md rounded-lg overflow-hidden">
+              <img class="w-auto h-auto" src="img/blog/trecker.png" alt="Placeholder Image">
+              <div class="p-4">
+                <h2 class="text-base text-gray-400">Travel |  28 Apr 2022</h2>
+                <h5 class="text-white mt-2 text-1xl font-bold">The artist vocation is to send light
+                  into the human heart.</h5>
+                <div class="my-4">
+                  <p class="text-base text-gray-500">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
+                </div>
+                <div class="mt-3">
+                  <p><i class="fa-solid fa-minus px-1 text-yellow-400"></i><span class="text-white">Posted By Daryl Smith </span><i class="fa-solid fa-minus text-yellow-400"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-xs mx-auto mb-4 md:mb-0 lg:mb-0">
+            <div class="bg-black shadow-md rounded-lg overflow-hidden">
+              <img class="w-[500px] h-[270px]" src="img/blog/creative-design.png" alt="Placeholder Image">
+              <div class="p-4">
+                <h2 class="text-base text-gray-400">Design |  28 Apr 2022</h2>
+                <h5 class="text-white mt-2 text-1xl font-bold">The artist vocation is to send light into the human heart.</h5>
+                <div class="my-4">
+                <p class="text-base text-gray-500">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
+              </div>
+              <div class="mt-3">
+                <p><i class="fa-solid fa-minus px-1 text-yellow-400"></i><span class="text-white">Posted By Daryl Smith </span><i class="fa-solid fa-minus text-yellow-400"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-xs mx-auto mb-4 md:mb-0 lg:mb-0">
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <img class="w-auto h-auto" src="img/blog/above-the-cloud.png" alt="Placeholder Image">
+            <div class="p-4">
+              <h2 class="text-base text-gray-400">Travel |  28 Apr 2022</h2>
+              <h5 class="text-white mt-2 text-1xl font-bold">The artist vocation is to send light
+                into the human heart.</h5>
+              <div class="my-4">
+                <p class="text-base text-gray-500">Lorem Ipsum is simply dummy text the
+                  printing typesetting industry. Lorem
+                  Ipsum has been...</p>
+              </div>
+              <div class="mt-3">
+                <p><i class="fa-solid fa-minus px-1 text-yellow-400"></i><span class="text-white">Posted By Daryl Smith </span><i class="fa-solid fa-minus text-yellow-400"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!--  pricing section area -->
+      <section class="flex justify-center">
+        <div class="lg:my-4 my-48">
+          <h2 class="font-bold text-2xl text-left text-white py-4 my-8 lg:my-4">Pricing</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <div class="bg-black text-white max-w-xs mx-auto rounded-xl">
+              <div class="my-8">
+                <button class="bg-yellow-800 hover:bg-yellow-700 text-white font-bold py-2 px-4  rounded-tr-full rounded-r-full">Intro</button>
+              </div>
+              <div class="px-4">
+                <div class="my-8">
+                  <p ><span class="font-bold text-4xl">$29</span><span class="">/ month</span></p>
+                </div>
+                <div class="bg-neutral-800	p-4 rounded">
+                  <ul>
+                    <li class="text-1xl">Interface Design</li>
+                    <li class="text-1xl">Front-end Code</li>
+                    <li class="text-1xl">Back-end Development</li>
+                    <li class="text-gray-400 text-1xl "><del>Search Engine Optimization (SEO)</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Awesome Support</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Responsive site</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Easy in use</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Useful site</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Speedy web</del></li>
+                  </ul>
+                </div>
+                <div class="my-8">
+                  <button class="bg-gradient-to-r from-yellow-500 to-yellow-800 hover:from-yellow-500 hover:to-yellow-500 py-2 px-4 rounded ">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black text-white  max-w-xs mx-auto rounded-xl ">
+              <div class="my-8">
+                <button class="bg-yellow-800 hover:bg-yellow-700 text-white font-bold py-2 px-4  rounded-tr-full rounded-r-full">Base</button>
+              </div>
+              <div class="px-4">
+                <div class="my-8">
+                  <p ><span class="font-bold text-4xl">$49</span><span class="">/ month</span></p>
+                </div>
+                <div class="bg-neutral-800	p-4 rounded">
+                  <ul>
+                    <li class="text-1xl">Interface Design</li>
+                    <li class="text-1xl">Front-end Code</li>
+                    <li class="text-1xl">Back-end Development</li>
+                    <li class="text-gray-400 text-1xl "><del>Search Engine Optimization (SEO)</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Awesome Support</del></li>
+                    <li class=" text-1xl ">Responsive site</li>
+                    <li class="text-gray-400 text-1xl "><del>Easy in use</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Useful site</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Speedy web</del></li>
+                  </ul>
+                </div>
+                <div class="my-8">
+                  <button class="border border-yellow-500 text-amber-400 hover:text-white	hover:bg-yellow-500 py-2 px-4 rounded">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 card design  -->
+            <div class="bg-black text-white  max-w-xs mx-auto rounded-xl ">
+              <div class="my-8">
+                <button class="bg-yellow-800 hover:bg-yellow-700 text-white font-bold py-2 px-4  rounded-tr-full rounded-r-full">Popular</button>
+              </div>
+              <div class="px-4">
+                <div class="my-8">
+                  <p ><span class="font-bold text-4xl">$99</span><span class="">/ month</span></p>
+                </div>
+                <div class="bg-neutral-800	p-4 rounded">
+                  <ul>
+                    <li class="text-1xl">Interface Design</li>
+                    <li class="text-1xl">Front-end Code</li>
+                    <li class="text-1xl">Back-end Development</li>
+                    <li class=" text-1xl ">Search Engine Optimization (SEO)</li>
+                    <li class=" text-1xl ">Awesome Support</li>
+                    <li class=" text-1xl">Responsive site</li>
+                    <li class="text-gray-400 text-1xl "><del>Easy in use</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Useful site</del></li>
+                    <li class="text-gray-400 text-1xl "><del>Speedy web</del></li>
+                  </ul>
+                </div>
+                <div class="my-8">
+                  <button class="border border-yellow-500 text-amber-400 hover:text-white	hover:bg-yellow-500 py-2 px-4 rounded">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <!-- 4 card design  -->
+            <div class="bg-black text-white  max-w-xs mx-auto  rounded-xl ">
+                <div class="my-8">
+                    <button class="bg-yellow-800 hover:bg-yellow-700 text-white font-bold py-2 px-4  rounded-tr-full rounded-r-full">Enterprise</button>
+                </div>
+                  <div class="px-4">
+                    <div class="my-8">
+                        <p ><span class="font-bold text-4xl">$199</span><span class="">/ month</span></p>
+                    </div>
+                    <div class="bg-neutral-800	p-4 rounded">
+                        <ul>
+                            <li class="text-1xl">Interface Design</li>
+                            <li class="text-1xl">Front-end Code</li>
+                            <li class="text-1xl">Back-end Development</li>
+                            <li class="text-1xl ">Search Engine Optimization (SEO)</li>
+                            <li class=" text-1xl ">Awesome Support</li>
+                            <li class=" text-1xl ">Responsive site</li>
+                            <li class=" text-1xl ">Easy in use</li>
+                            <li class=" text-1xl ">Useful site</li>
+                            <li class=" text-1xl ">Speedy web</li>
+                        </ul>
+                    </div>
+                    <div class="my-8">
+                        <button class="border border-yellow-500 text-amber-400 hover:text-white	hover:bg-yellow-500 py-2 px-4 rounded">Get Started</button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section design and responsive -->
+      <section>
+        <div class="flex w-full justify-center px-4 ">
+          <div class="my-8">
+            <h2 class="font-bold text-2xl text-left text-white py-4">Contact</h2>
+          <div class="flex  mx-auto">
+          <form>
+            <div class="mb-4 flex gap-4 "><!-- lg:flex-row flex-col -->
+              <div class="">
+                <label for="name" class="block text-gray-700 font-bold mb-2  text-white">Fast name*</label>
+              <input type="text" id="name" name="name" placeholder="Fast name*" class=" w-[100%] pr-20 border rounded-lg focus:outline-none focus:border-blue-500 bg-black ">
+              </div>
+              <div>
+                <label for="name" class="block text-gray-700 font-bold mb-2 text-white">Last name*</label>
+              <input type="text" id="name" name="name" placeholder="Last name" class="w-[100%] pr-20 border rounded-lg focus:outline-none focus:border-blue-500 bg-black">
+              </div>
+            </div>
+      
+            <div class="mb-4 flex  gap-4">
+                <div class="">
+                  <label for="email" class="block text-gray-700 font-bold mb-2 text-white">Email*</label>
+                <input type="text" id="email" name="email*" placeholder="Email*" class=" w-[100%] pr-20 border rounded-lg focus:outline-none focus:border-blue-500 bg-black">
+                </div>
+                <div>
+                  <label for="name" class="block text-gray-700 font-bold mb-2 text-white">Phone*</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone*" class="w-[100%] pr-20 border  p-2 rounded-lg focus:outline-none focus:border-yellow-400 bg-black">
+                </div>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2 text-white">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" class="w-full px-3 bg-black py-2 border p-2 rounded-lg focus:outline-none focus:border-yellow-500"></textarea>
+            </div> 
+            <div>
+              <button type="submit" value="" class="bg-yellow-500 text-white px-4 w-full py-2 rounded-md hover:bg-yellow-500 focus:outline-none focus:bg-yellwo-600">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+        </div>
+      </section>
+
+
     </main>
 
   
